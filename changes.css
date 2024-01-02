@@ -7,6 +7,11 @@
   --personal-gradient-into-arrowpanels: linear-gradient(
     165deg, #61ffca 0%, #82e2ff 100%
   ) !important;
+
+  --toolbar-bgcolor: transparent !important;
+  --tab-selected-bgcolor: #1C212C !important;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +19,14 @@
 :root[lwt-toolbar-field-focus-brighttext],
 :root:-moz-lwtheme{
   --toolbarseparator-color: #db6165 !important;
-}}
 
+  --urlbar-popup-url-color: #61ffcaBB !important;
+  --lwt-popup-brighttext-url-color: #db6165 !important;
+  --lwt-toolbar-field-highlight: #1C212C !important;
+  --lwt-toolbar-field-highlight-text: #ffca85 !important;
+  --lwt-toolbarbutton-icon-fill-attention: #61ffcaBB !important;
+}
+}
 
 /* ------ searchbar.css ------ */
 .browser-toolbar:not(.titlebar-color) {
@@ -31,9 +42,21 @@
 
 /* ------ ch_urlbar-searchbar.css ------ */
 #nav-bar[urlbar-exceeds-toolbar-bounds="true"]::before {
-  background-color: #000000CC;
+  background-color: #1C212CAA;
 }
 
-#urlbar[focused] {
-  background-image: linear-gradient(165deg, #61ffca 0%, #82e2ff 100%) !important;
+#urlbar {
+  background-image: linear-gradient(165deg, #1C212C 0%, #1C212C 100%) !important;
+  border: solid 1px #ffca8588 !important;
+  font-weight: bold !important;
+}
+
+.urlbarView-row-inner:is([selected], :hover) .urlbarView-url{
+  color: #61ffcaBB !important; 
+}
+
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner, .urlbarView-row-inner[selected]  {
+  background-image: linear-gradient(165deg, #1C212C 0%, #1C212C 100%) !important;
+  color: #ffca85 !important; 
+  border-radius: 0px !important; 
 }
