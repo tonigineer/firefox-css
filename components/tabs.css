@@ -1,0 +1,4 @@
+
+#TabsToolbar, #toolbar-menubar{
+    background-color: var(--background) !important;
+}

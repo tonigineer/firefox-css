@@ -1,0 +1,84 @@
+@media (-moz-platform: windows) {
+  .titlebar-button{
+    background-color: transparent !important;
+    padding-inline: 3px !important;
+    padding-block: 10px !important;
+  }
+
+  .titlebar-button:hover{
+    background-color: transparent !important;
+  }
+
+  .titlebar-button.titlebar-min .toolbarbutton-icon,
+  .titlebar-button.titlebar-restore .toolbarbutton-icon, .titlebar-button.titlebar-max .toolbarbutton-icon,
+  .titlebar-button.titlebar-close .toolbarbutton-icon{
+    width: 32px !important;
+    height: 32px !important;
+    padding: 8px !important;
+  }
+
+  .titlebar-button:hover .toolbarbutton-icon{
+    background-color:  #140e1a33 !important;
+    border-radius: 5px !important;
+  }
+  .titlebar-button.titlebar-close:hover .toolbarbutton-icon{        
+      background-color:  #ff6767FF !important;
+  }
+  .titlebar-button {
+      background-color: #140e1a33  !important;
+      -moz-context-properties: stroke !important;
+      stroke: currentColor !important;
+  }
+  .titlebar-min:hover {
+    background-color: transparent !important;
+    color: #ffca85 !important;
+  }
+  .titlebar-max:hover {
+    background-color: transparent !important;
+    color: #ffca85 !important;
+  }
+  .titlebar-restore:hover {
+    background-color: transparent !important;
+    color: #ffca85 !important;
+  }
+  .titlebar-close:hover {
+      background-color: transparent !important;
+      color: #FFF4E5 !important;
+  }
+  .titlebar-close {
+      list-style-image: url(chrome://browser/skin/window-controls/close.svg) !important;
+  }
+  .titlebar-min {
+      list-style-image: url(chrome://browser/skin/window-controls/minimize.svg) !important
+  }
+  .titlebar-max {
+      list-style-image: url(chrome://browser/skin/window-controls/maximize.svg) !important
+  }
+  .titlebar-restore {
+      list-style-image: url(chrome://browser/skin/window-controls/restore.svg) !important
+  }
+}
+
+
+@media (-moz-platform: linux) {
+  .titlebar-button{
+    list-style-image: none !important;
+    appearance: auto !important;
+  }
+  .titlebar-min {
+    -moz-default-appearance: -moz-window-button-minimize !important;
+  }
+  .titlebar-max {
+    -moz-default-appearance: -moz-window-button-maximize !important;
+  }
+  .titlebar-restore {
+    -moz-default-appearance: -moz-window-button-restore !important;
+  }
+  .titlebar-close {
+      -moz-default-appearance: -moz-window-button-close !important;
+  }
+  .titlebar-buttonbox {
+      min-height: calc(var(--margin-top) * 2 + var(--tab-height-personal)) !important;
+      max-height: calc(var(--margin-top) * 2 + var(--tab-height-personal)) !important;
+  }
+}

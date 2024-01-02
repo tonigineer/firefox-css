@@ -1,0 +1,7 @@
+:root{
+  scrollbar-color: var(--red) var(--background) !important;
+  --shield-icon-personal: url("../images/shield-dark.svg") !important;                                             /*Ícono protección contra rastreo*/
+  --animated-beats: url("../images/beats-dark.gif") !important;   
+}
+
+

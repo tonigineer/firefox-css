@@ -1,0 +1,36 @@
+/* The bookmark bar is also defined by the button .css */
+
+:root{
+  /* Back, Forward button and so */
+  --toolbarbutton-inner-padding: 5px !important;
+  /* All button and folder icon in bookmark bar */
+  --toolbarbutton-icon-fill:#FFF4E544 !important;
+
+  --button-bgcolor:         #140E1A !important;
+  --button-hover-bgcolor:   #140E1A !important;
+  --button-active-bgcolor:  #140E1A77 !important;
+  
+  --toolbarseparator-color: var(--red) !important;
+
+  /* Colors found in menu of bookmark star in url line for example */
+  --button-primary-bgcolor:       #ff676766 !important;
+  --button-primary-color:         #eaeaea !important;
+  --button-primary-hover-bgcolor: #ff6767FF !important;
+  --button-primary-active-bgcolor:#ffca85 !important;
+  --focus-outline-color:          #61ffca !important;
+
+}
+
+
+:is(menupopup, panel)[type="arrow"]{
+    background-image: linear-gradient(
+      165deg, #61ffca 0%, #82e2ff 50%, #82e2ff 100%
+    ) !important; 
+    /* background-repeat: no-repeat !important; */
+    /* background-color: transparent !important; */
+    border-radius: 5px !important;
+    /* margin-top: 0px !important; */
+    /* border: 0px solid var(--background) !important; */
+    /* background-clip: padding-box !important; */
+}
+
