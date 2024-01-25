@@ -19,7 +19,8 @@ cd ~/.mozilla/firefox/profiles/<default-profile-folder>/
 Clone the repository into the profile directory as follows:
 
 ``` sh
-git clone https://github.com/Godiesc/Chameleons-Beauty chrome
+git clone https://github.com/Godiesc/Chameleons-Beauty chrome_orig
+ln -s chrome_orig/chrome chrome
 git clone https://github.com/tonigineer/firefox-css chrome_edit
 ```
 
